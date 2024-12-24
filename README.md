@@ -1,4 +1,4 @@
-# Webpack 5 Boilerplate Template
+<!-- # Webpack 5 Boilerplate Template
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2024?logo=github)
 ![Build Status](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/actions/workflows/deploy.yml/badge.svg)
@@ -230,4 +230,5 @@ $ npm run stats
 
 This boilerplate template contains integration with [Github Actions](https://github.com/features/actions/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
 
-For more information on how to set up alternative deployment processes, check out the [Github Actions documentation on deployment](https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.
+For more information on how to set up alternative deployment processes, check out the [Github Actions documentation on deployment](https://docs.github.com/en/actions/deployment/about-deployments/deploying-with-github-actions). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase. -->
+
