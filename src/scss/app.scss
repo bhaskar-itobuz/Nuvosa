@@ -79,7 +79,7 @@
 
     &:hover {
         color: black !important;
-        background-color: #74630edc !important;
+        background-color: #b8a12cdc !important;
     }
 }
 
@@ -1843,7 +1843,9 @@ input::placeholder {
 
 .plane-section {
     background-color: #FAFAFA;
-
+    @media (min-width: 1440px) {
+        padding-bottom: 150px !important;
+    }
     .plane-heading {
         width: 90vw;
         margin-left: 5vw;
@@ -1902,13 +1904,28 @@ input::placeholder {
     }
 
     .plane-cards {
+        background-color: #fff;
+
         &:hover {
-            // padding: 0px !important;
             background-image: url("../images/design/background.png");
             background-size: fit;
-        }
-
-    background-color: #fff;
+            background-position:center;
+            transform: scale(1,1.1);
+            .plane-card-heading{
+                color: white;
+            }
+            .plane-card-description{
+                color: white;
+            }
+            .plane-cards-button{
+                background-color: #fad725 !important;
+                border: unset !important;
+                border-radius: 2px !important;
+            }
+            .card-number{
+                color: white;
+            }
+         }
 
     @media (min-width: 768px) {
         width: 250px;
@@ -1985,12 +2002,6 @@ input::placeholder {
         }
 
     }
-
-    // &:hover {
-    //     cursor: pointer;
-    //     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    // }
-
     @media (min-width: 1440px) {
         width: 300px;
         padding-bottom: 70px !important;
@@ -2001,6 +2012,7 @@ input::placeholder {
     }
 }
 }
+
 
 .member-section {
 
@@ -2095,6 +2107,93 @@ input::placeholder {
             .member-card-heading {
                 color: #6F77F1;
             }
+        }
+    }
+}
+
+.our-clint-section{
+
+    .our-clint-header{
+        @media (min-width: 768px) {
+            font-size: 30px;
+            font-weight: 500;
+        }
+        @media (min-width: 1024px) {
+            font-size: 40px;
+        }
+        @media (min-width: 1440px) {
+            font-size: 55px;
+        }
+    }
+    .our-clint-description{
+        color: #828282;
+        @media (min-width: 768px) {
+            width: 300px ;
+            margin: 0px auto;
+        }
+        @media (min-width: 1024px) {
+            font-size: 17px;
+            width: 500px ;
+        }
+    }
+    .colon-img{
+        top:10px;
+        left: 20px;
+        @media (min-width: 1440px) {
+            top: 15px;
+            left: 50px;
+        }
+    }
+    .our-clint-cards{
+        width: 90vw;
+        margin: 0px auto;
+        padding-bottom: 20px;
+        &::-webkit-scrollbar {
+            display: none;
+          }
+        @media (min-width: 768px) {
+            overflow-x: auto;
+        }
+        .card{
+            &:hover {
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            }
+            @media (min-width: 768px) {
+                flex: 0 0 auto;
+                width: 300px ;
+            }
+            @media (min-width: 1024px) {
+                width: 400px;
+            }
+            @media (min-width: 1440px) {
+                width: 570px;
+            }
+        }
+        .card-description{
+            color: #828282;
+            @media (min-width: 1440px) {
+                font-size: 17px;
+                width: 469px;
+                margin: 0px auto;
+                padding-left: 20px;
+            }
+        }
+        .clint-img{
+            width: 100px;
+            margin: 0px auto;
+            margin-top: 20px;
+            @media (min-width: 1440px) {
+                width: 50px;
+            }
+        }
+        .clint-desc{
+            margin-top: -15px;
+            font-size: 12px;
+            color: #828282;
+        }
+        .clint-name{
+            font-size: 12px;
         }
     }
 }
